@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Manage your Toy Haven wishlist and collection.">
+  <meta name="theme-color" content="#2563EB">
+  <title>Toy Haven | Wishlist</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/products.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/wishlist.js" defer></script>
+</head>
+<body data-page="wishlist">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="nav-wrap container">
+      <a class="brand" href="index.html"><span aria-hidden="true">★</span> Toy Haven</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span class="sr-only">Open navigation menu</span><span></span><span></span><span></span></button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="wishlist.html" aria-current="page">Wishlist</a>
+        <a href="cart.html">Cart <span class="cart-count" role="status" aria-label="0 items in cart">0</span></a>
+        <a href="support.html">Support &amp; FAQ</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Your collection</p>
+        <h1>Wishlist &amp; toy shelf</h1>
+        <p>Save favourites and track whether you’re interested, already own them, or changed your mind.</p>
+      </div>
+    </section>
+    <div class="section container">
+      <div id="wishlist-items" class="wishlist-grid" aria-live="polite"></div>
+    </div>
+  </main>
+  <footer class="site-footer simple-footer">
+    <div class="container footer-bottom"><small>© <span class="current-year"></span> Toy Haven. Student project.</small></div>
+  </footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

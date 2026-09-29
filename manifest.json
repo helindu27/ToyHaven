@@ -1,0 +1,13 @@
+{
+  "name": "Toy Haven",
+  "short_name": "Toy Haven",
+  "description": "A playful front-end toy shop demo.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F8FAFC",
+  "theme_color": "#2563EB",
+  "icons": [
+    {"src":"images/favicon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}
+  ]
+}

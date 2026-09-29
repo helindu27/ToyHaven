@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Complete your simulated Toy Haven order.">
+  <meta name="theme-color" content="#2563EB">
+  <title>Toy Haven | Checkout</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/products.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/checkout.js" defer></script>
+</head>
+<body data-page="checkout">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header"><div class="nav-wrap container"><a class="brand" href="index.html"><span aria-hidden="true">★</span> Toy Haven</a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span class="sr-only">Open navigation menu</span><span></span><span></span><span></span></button><nav id="primary-nav" class="primary-nav" aria-label="Primary navigation"><a href="index.html">Home</a><a href="products.html">Products</a><a href="wishlist.html">Wishlist</a><a href="cart.html">Cart <span class="cart-count" role="status" aria-label="0 items in cart">0</span></a><a href="support.html">Support &amp; FAQ</a></nav></div></header>
+  <main id="main-content">
+    <section class="page-hero compact"><div class="container"><p class="eyebrow">Almost there</p><h1>Checkout</h1><p>This is a simulation. No real payment will be processed.</p></div></section>
+    <section class="section container">
+      <div id="checkout-success" class="success-panel" hidden tabindex="-1"><span aria-hidden="true">🎉</span><h2>Order placed successfully!</h2><p>Your pretend order is safely recorded. Thanks for visiting Toy Haven.</p><a class="button" href="products.html">Keep browsing</a></div>
+      <div id="checkout-layout" class="checkout-layout">
+        <form id="checkout-form" class="form-card" novalidate>
+          <h2>Delivery details</h2>
+          <div class="form-group"><label for="full-name">Full Name <span aria-hidden="true">*</span></label><input id="full-name" name="fullName" type="text" autocomplete="name" placeholder="e.g. Alex Perera" aria-describedby="full-name-error" required><p class="error-message" id="full-name-error" aria-live="polite"></p></div>
+          <div class="form-group"><label for="email">Email <span aria-hidden="true">*</span></label><input id="email" name="email" type="email" autocomplete="email" placeholder="e.g. alex@example.com" aria-describedby="email-error" required><p class="error-message" id="email-error" aria-live="polite"></p></div>
+          <div class="form-group"><label for="address">Delivery Address <span aria-hidden="true">*</span></label><textarea id="address" name="address" rows="4" autocomplete="street-address" placeholder="Enter your delivery address" aria-describedby="address-error" required></textarea><p class="error-message" id="address-error" aria-live="polite"></p></div>
+          <fieldset class="form-group" id="payment-method" aria-describedby="payment-error"><legend>Payment Method <span aria-hidden="true">*</span></legend><label class="radio-card"><input type="radio" name="payment" value="Card"> Card</label><label class="radio-card"><input type="radio" name="payment" value="Cash on Delivery"> Cash on Delivery</label><p class="error-message" id="payment-error" aria-live="polite"></p></fieldset>
+          <button class="button button-block" type="submit">Place Order</button>
+        </form>
+        <aside class="summary-card"><h2>Order summary</h2><div id="checkout-items"></div><div class="summary-row summary-total"><span>Total</span><strong id="checkout-total">LKR 0</strong></div></aside>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer simple-footer"><div class="container footer-bottom"><small>© <span class="current-year"></span> Toy Haven. Student project.</small></div></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

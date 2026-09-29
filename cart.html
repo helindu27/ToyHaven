@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Review your Toy Haven shopping cart.">
+  <meta name="theme-color" content="#2563EB">
+  <title>Toy Haven | Cart</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/products.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/cart.js" defer></script>
+</head>
+<body data-page="cart">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header"><div class="nav-wrap container"><a class="brand" href="index.html"><span aria-hidden="true">★</span> Toy Haven</a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span class="sr-only">Open navigation menu</span><span></span><span></span><span></span></button><nav id="primary-nav" class="primary-nav" aria-label="Primary navigation"><a href="index.html">Home</a><a href="products.html">Products</a><a href="wishlist.html">Wishlist</a><a href="cart.html" aria-current="page">Cart <span class="cart-count" role="status" aria-label="0 items in cart">0</span></a><a href="support.html">Support &amp; FAQ</a></nav></div></header>
+  <main id="main-content">
+    <section class="page-hero compact"><div class="container"><p class="eyebrow">Your basket</p><h1>Shopping cart</h1></div></section>
+    <div class="section container"><div class="cart-layout"><div id="cart-items" class="cart-items" aria-live="polite"></div><aside class="summary-card" aria-labelledby="cart-summary-title"><h2 id="cart-summary-title">Order summary</h2><div class="summary-row"><span>Subtotal</span><strong id="cart-total">LKR 0</strong></div><p class="muted">Delivery is free for this classroom demo.</p><a id="checkout-link" class="button button-block" href="checkout.html">Proceed to checkout</a><button id="clear-cart" class="button button-secondary button-block" type="button">Clear cart</button></aside></div></div>
+  </main>
+  <footer class="site-footer simple-footer"><div class="container footer-bottom"><small>© <span class="current-year"></span> Toy Haven. Student project.</small></div></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

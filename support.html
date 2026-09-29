@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact Toy Haven and find answers to frequently asked questions.">
+  <meta name="theme-color" content="#2563EB">
+  <title>Toy Haven | Support & FAQ</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/products.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/support.js" defer></script>
+</head>
+<body data-page="support">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="nav-wrap container">
+      <a class="brand" href="index.html"><span aria-hidden="true">★</span> Toy Haven</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Open navigation menu</span><span></span><span></span><span></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="wishlist.html">Wishlist</a>
+        <a href="cart.html">Cart <span class="cart-count" role="status" aria-label="0 items in cart">0</span></a>
+        <a href="support.html" aria-current="page">Support &amp; FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero support-hero">
+      <div class="container">
+        <p class="eyebrow">Support & FAQ</p>
+        <h1>How can we help?</h1>
+        <p>Send us a message and our Toy Haven team will be happy to help.</p>
+      </div>
+    </section>
+
+    <div class="section container support-page-layout">
+      <section aria-labelledby="message-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow dark">Contact our team</p>
+            <h2 id="message-title">Send us a message</h2>
+          </div>
+        </div>
+
+        <form id="feedback-form" class="form-card support-form" novalidate>
+          <div class="form-group">
+            <label for="feedback-name">Your Name <span aria-hidden="true">*</span></label>
+            <input id="feedback-name" name="name" type="text" autocomplete="name" placeholder="e.g. Alex Perera" aria-describedby="feedback-name-error" required>
+            <p class="error-message" id="feedback-name-error" aria-live="polite"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="feedback-email">Email Address <span aria-hidden="true">*</span></label>
+            <input id="feedback-email" name="email" type="email" autocomplete="email" placeholder="e.g. alex@example.com" aria-describedby="feedback-email-error" required>
+            <p class="error-message" id="feedback-email-error" aria-live="polite"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="feedback-topic">Topic / Subject</label>
+            <select id="feedback-topic" name="topic">
+              <option value="">Select a topic</option>
+              <option>General Product Inquiry</option>
+              <option>Order Status & Tracking</option>
+              <option>Collector Packaging Request</option>
+              <option>Item Restock Suggestion</option>
+              <option>Website Feature Feedback</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="feedback-message">Your Message <span aria-hidden="true">*</span></label>
+            <textarea id="feedback-message" name="message" rows="6" placeholder="e.g. I would like to know more about this product." aria-describedby="feedback-message-error" required></textarea>
+            <p class="error-message" id="feedback-message-error" aria-live="polite"></p>
+          </div>
+
+          <button class="button" type="submit">Send Message</button>
+          <p id="feedback-confirmation" class="form-message success-message" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="faq-section" aria-labelledby="faq-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow dark">Quick answers</p>
+            <h2 id="faq-title">Frequently asked questions</h2>
+          </div>
+        </div>
+
+        <div class="faq-list">
+          <article class="faq-item">
+            <h3><button type="button" aria-expanded="false" aria-controls="faq-1">How do I add an item to my cart?<span aria-hidden="true">+</span></button></h3>
+            <div id="faq-1" class="faq-answer" hidden><p>Select “Add to cart” on any product card. The cart badge will update immediately.</p></div>
+          </article>
+          <article class="faq-item">
+            <h3><button type="button" aria-expanded="false" aria-controls="faq-2">How do I save a product to my wishlist?<span aria-hidden="true">+</span></button></h3>
+            <div id="faq-2" class="faq-answer" hidden><p>Select the heart button on a product card. Your saved item will appear on the Wishlist page.</p></div>
+          </article>
+          <article class="faq-item">
+            <h3><button type="button" aria-expanded="false" aria-controls="faq-3">Can I change the quantity in my cart?<span aria-hidden="true">+</span></button></h3>
+            <div id="faq-3" class="faq-answer" hidden><p>Yes. Use the plus and minus buttons beside an item to change its quantity and update the total.</p></div>
+          </article>
+          <article class="faq-item">
+            <h3><button type="button" aria-expanded="false" aria-controls="faq-4">What payment methods are available?<span aria-hidden="true">+</span></button></h3>
+            <div id="faq-4" class="faq-answer" hidden><p>The checkout demonstration offers Card and Cash on Delivery. No real payment is processed.</p></div>
+          </article>
+          <article class="faq-item">
+            <h3><button type="button" aria-expanded="false" aria-controls="faq-5">How can I check my order?<span aria-hidden="true">+</span></button></h3>
+            <div id="faq-5" class="faq-answer" hidden><p>This student project stores completed demonstration orders locally in your browser.</p></div>
+          </article>
+          <article class="faq-item">
+            <h3><button type="button" aria-expanded="false" aria-controls="faq-6">How do I know when an item is back in stock?<span aria-hidden="true">+</span></button></h3>
+            <div id="faq-6" class="faq-answer" hidden><p>Choose “Item Restock Suggestion” in the contact form and tell us which product interests you.</p></div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer simple-footer">
+    <div class="container footer-bottom"><small>© <span class="current-year"></span> Toy Haven. Student project.</small></div>
+  </footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
